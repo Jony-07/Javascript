@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <form id="form"  action="#">
+        Name : <input type="text" name="name" value="Jony" />
+        <br>
+        Lastname : <input type="text" name="lastname" value="Morales" />
+        <br>
+        <button onclick="showValue()" >Show</button>
+    </form>
+    
+    <div id="values"></div>
+    <script>
+        function showValue() {
+            let form = document.forms['form'];
+            let text = '';
+            for(let element of form){
+                text += element.value + '<br/>';
+            }
+           document.getElementById('values').innerHTML = text;
+        }
+    </script>
+</body>
+
+</html>

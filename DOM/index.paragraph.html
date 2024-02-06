@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        .azul{
+            color:blue;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="title">DOM JS</h1>
+    <p id="paragraph1">Learning JS</p>
+    <p id="paragraph2">Another paragraph</p>
+    <p id="paragraph3" class="azul">Paragraph 3</p>
+    <p id="paragraph4" class="azul">Paragraph 4</p>
+    <script>
+        let paragraphsByClass = document.querySelectorAll('p.azul');
+        let paragraphs = document.getElementsByTagName('p');
+        console.log(`No. paragraphs: ${paragraphs.length}`);
+        for(let i=0;i<paragraphs.length;i++) {
+            console.log(paragraphs[i].innerHTML);
+        }
+        let title = document.getElementById('title');
+        let paragraph = document.getElementById('paragraph1');
+        paragraph.innerHTML = 'Learning JS in Udemy';
+        console.log(`Text from title: ${title.innerHTML}`);
+        console.log('Saludos from js')
+    </script>
+</body>
+</html>
