@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Write</title>
+</head>
+<body>
+    <h1 id="title">Handling the DOM</h1>
+    <br>
+    Name : <input type="text" id="name" onchange="convert(this)" />
+    <div id="show">
+
+    </div>
+    <script>
+        function convert(obj) {
+            obj.value = obj.value.toUpperCase();
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>On mouse over - out</title>
+</head>
+<body>
+    <h1 
+    id="title">Handling the DOM</h1>
+    <br>
+    Name: <input type="text" id="name">
+    <br>
+    Lastname: <input type="text" id="lastname"/>
+    <script>
+        document.getElementById("name").addEventListener('focus',(event) =>
+        {
+            event.target.style.background = 'pink';
+        }
+        );
+        document.getElementById("name").addEventListener('blur',(event) =>
+        {
+            event.target.style.background = 'white';
+        });
+        document.getElementById("lastname").addEventListener('focus',change);
+        document.getElementById("lastname").addEventListener('blur',back);
+
+        function change(event){
+            let component = event.target;
+            component.style.background = 'yellow';
+        }
+
+        function back(event){
+            event.target.style.background = 'white';
+        }
+    </script>
+</body>
+</html>

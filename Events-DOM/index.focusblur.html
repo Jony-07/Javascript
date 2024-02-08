@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>On mouse over - out</title>
+</head>
+<body>
+    <h1 
+    id="title">Handling the DOM</h1>
+    <br>
+    Name: <input type="text" onfocus="change(this)" onblur="back(this)">
+    <br>
+    Lastname: <input type="text" onfocus="change(this)" onblur="back(this)" />
+    <script>
+        function change(inputElement) {
+            inputElement.style.background = 'yellow';
+        }
+
+        function back(inputElement) {
+            inputElement.style.background = 'white';
+        }
+    </script>
+</body>
+</html>
