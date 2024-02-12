@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.budget.css">
+</head>
+<body>
+    <div class="container my-2 pt-2 content-justify-center">
+        <div class="row">
+            <div class="col-md-6 offset-3">
+                <div class="header">
+                    <h2 class="display-3">
+                        Available budget
+                    </h2>
+                </div>
+                <div class="content text-center">
+                    <h3 class="display-4" id="budget">$0.0</h3>
+                    <div class="income">
+                        Income <span id="income" >$0.0</span>
+                    </div>
+                    <div class="expenses">
+                        Expenses <span id="expenses" >$0.0</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row my-2 py-2 content-justify-center">
+            <div class="col-md-8 offset-2">
+                <form action="#" role="form" id="form">
+                    <div class="form-group row">
+                        <select class="form-control col-md-2" name="type" id="type">
+                            <option value="1">Income</option>
+                            <option value="0">Expenses</option>
+                        </select>
+                        <input class="form-control col-md-6" type="text" placeholder="Add a description">
+                        <input class="form-control col-md-2" type="number" name="amount" id="amount" min="0" placeholder="Amount">
+                        <button type="button" class="btn btn-warning col-md-2">Add</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="row text-center" id="flow">
+                <div class="income col-md-6">
+                    <legend>INCOME</legend>
+                    <div class="table-responsive">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>Description</th>
+                                    <th>Amount</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+    
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="expenses col-md-6">
+                    <legend>EXPENSES</legend>
+                    <div class="table-responsive">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>Description</th>
+                                    <th>Amount</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+    
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                </div>
+        </div>
+       
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</html>
