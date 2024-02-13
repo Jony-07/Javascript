@@ -8,4 +8,7 @@ class Income extends Data{
         this._idIncome = ++Income.incomeCounter;
     }
 
+    get id(){
+        return this._idIncome;
+    }
 }

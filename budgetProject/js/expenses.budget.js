@@ -5,7 +5,9 @@ class Expenses extends Data{
 
     constructor(description, amount) {
         super(description, amount);
-        this._idIncome = ++Expenses.expensesCounter;
+        this._idExpense = ++Expenses.expensesCounter;
     }
+
+    get id() { return this._idExpense; }
 
 }
